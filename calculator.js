@@ -1,17 +1,26 @@
 const display=document.getElementById("display");
+let isResult = false;
 
 function appendToDisplay(input){
-    display.value += input;
+    if (isResult) {
+        display.value = input;
+        isResult = false;
+    } else {
+        display.value += input;
+    }
 }
 function clearDisplay(){
     display.value="";
+    isResult = false;
 }
 function calculate(){
     try {
-        let expression = display.value.replace(/×/g, "*").replace(/÷/g, "/"); // Replace symbols
-        display.value = new Function("return " + expression)();  // Safe evaluation
+        let expression = display.value.replace(/×/g, "*").replace(/÷/g, "/");
+        display.value = new Function("return " + expression)();
+        isResult = true;
     } catch (error) {
         display.value = "error!";
+        isResult = false;
     }
 }
 function toggleSign() {
