@@ -1,4 +1,4 @@
-# Calculator Project
+# 📱 Apple Calculator
 
 This is a simple calculator application built using HTML, CSS, and JavaScript. The calculator supports basic operations such as addition, subtraction, multiplication, and division. It also features a clear button and the ability to toggle the sign of a number.
 
@@ -12,6 +12,5 @@ This is a simple calculator application built using HTML, CSS, and JavaScript. T
 - Responsive layout with CSS Grid
 - Clean and modern design
 
-## Demo
-
-You can view a live demo of the calculator [here](#) (replace with a link to a hosted version, if available).
+## 📺 Demo Video  
+🎥 Watch it in action: [YouTube Video](https://youtu.be/uB5vZg29q8E)
