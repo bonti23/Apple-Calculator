@@ -20,7 +20,7 @@ function calculate(){
         isResult = true;
     } catch (error) {
         display.value = "error!";
-        isResult = false;
+        isResult = true;
     }
 }
 function toggleSign() {
